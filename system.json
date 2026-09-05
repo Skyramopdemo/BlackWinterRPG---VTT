@@ -1,0 +1,36 @@
+{
+    "id": "Blackwinterrpg",
+    "title": "BlackwinterRPG Core System",
+    "description": "The Core System for BlackwinterRPG",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Skyramopdemo"
+        }
+    ],
+    "compatibility": {
+        "minimum": 14,
+        "maximum": 14
+    },
+    "esmodules": [
+        "blackwinterrpg.mjs"
+    ],
+    "styles": [
+        "blackwinterrpg.css"
+    ],
+    "languages": [
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "lang/pt-BR.json"
+        }
+    ],
+    "socket": false,
+    "grid": {
+      "distance": 1,
+      "units": "Meter"
+    },
+    "url": "",
+    "manifest": "",
+    "download": ""
+}
