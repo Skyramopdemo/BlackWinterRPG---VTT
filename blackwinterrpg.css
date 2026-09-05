@@ -1,1 +1,95 @@
+:root {
+  --bw-night: #10161b;
+  --bw-panel: #1b252c;
+  --bw-panel-light: #26343c;
+  --bw-ice: #a6d8d1;
+  --bw-ember: #d77b5d;
+  --bw-text: #edf1ed;
+  --bw-muted: #9daab0;
+}
 
+.blackwinter-actor-sheet {
+  min-height: 100%;
+  padding: 18px;
+  color: var(--bw-text);
+  background: linear-gradient(145deg, var(--bw-night), #1a2a31);
+  font-family: Georgia, serif;
+}
+
+.blackwinter-actor-sheet .sheet-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(166, 216, 209, 0.3);
+}
+
+.blackwinter-actor-sheet .profile-img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border: 2px solid var(--bw-ice);
+}
+
+.blackwinter-actor-sheet .identity { flex: 1; }
+.blackwinter-actor-sheet .actor-name {
+  width: 100%;
+  color: var(--bw-text);
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+}
+.blackwinter-actor-sheet .actor-type {
+  color: var(--bw-muted);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.blackwinter-actor-sheet .resources,
+.blackwinter-actor-sheet .attribute-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.blackwinter-actor-sheet .resource,
+.blackwinter-actor-sheet .attribute {
+  padding: 10px;
+  background: rgba(27, 37, 44, 0.8);
+  border: 1px solid rgba(166, 216, 209, 0.18);
+}
+.blackwinter-actor-sheet label,
+.blackwinter-actor-sheet h2 {
+  color: var(--bw-muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.blackwinter-actor-sheet .resource-fields {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+}
+.blackwinter-actor-sheet input {
+  min-width: 0;
+  color: var(--bw-text);
+  background: var(--bw-panel-light);
+  border: 1px solid rgba(166, 216, 209, 0.2);
+}
+.blackwinter-actor-sheet .resource-fields input { width: 50%; }
+.blackwinter-actor-sheet .attribute-grid { grid-template-columns: repeat(4, 1fr); }
+.blackwinter-actor-sheet .attribute {
+  color: var(--bw-text);
+  cursor: pointer;
+  text-align: left;
+}
+.blackwinter-actor-sheet .attribute strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--bw-ice);
+  font-size: 22px;
+}
+.blackwinter-actor-sheet .attribute:hover { border-color: var(--bw-ember); }

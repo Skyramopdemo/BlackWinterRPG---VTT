@@ -2,7 +2,7 @@
     "id": "blackwinterrpg",
     "title": "BlackwinterRPG Core System",
     "description": "The Core System for BlackwinterRPG",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         {
             "name": "Skyramopdemo"
@@ -26,6 +26,17 @@
             "path": "lang/pt-BR.json"
         }
     ],
+    "documentTypes": {
+        "Actor": {
+            "character": {},
+            "npc": {}
+        },
+        "Item": {
+            "item": {},
+            "weapon": {},
+            "armor": {}
+        }
+    },
     "socket": false,
     "grid": {
       "distance": 1,

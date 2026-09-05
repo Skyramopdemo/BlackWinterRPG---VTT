@@ -1,0 +1,25 @@
+{
+  "BLACKWINTER": {
+    "SHEETS": {
+      "ACTOR": "Ficha de personagem",
+      "NAME": "Nome"
+    },
+    "TYPES": {
+      "character": "Personagem",
+      "npc": "NPC"
+    },
+    "ATTRIBUTES": {
+      "TITLE": "Atributos",
+      "HEALTH": "Vida",
+      "STAMINA": "Vigor",
+      "DEFENSE": "Defesa",
+      "MIGHT": "Força",
+      "AGILITY": "Agilidade",
+      "SPIRIT": "Espírito",
+      "WITS": "Astúcia"
+    },
+    "ROLL": {
+      "TEST": "Teste de atributo"
+    }
+  }
+}

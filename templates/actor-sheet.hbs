@@ -1,0 +1,42 @@
+<form class="blackwinter-actor-sheet {{actor.type}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="identity">
+      <input class="actor-name" name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'BLACKWINTER.SHEETS.NAME'}}" />
+      <span class="actor-type">{{localize (concat 'BLACKWINTER.TYPES.' actor.type)}}</span>
+    </div>
+  </header>
+  <section class="resources">
+    <div class="resource health">
+      <label>{{localize "BLACKWINTER.ATTRIBUTES.HEALTH"}}</label>
+      <div class="resource-fields">
+        <input name="system.health.value" type="number" value="{{system.health.value}}" />
+        <span>/</span>
+        <input name="system.health.max" type="number" value="{{system.health.max}}" />
+      </div>
+    </div>
+    <div class="resource stamina">
+      <label>{{localize "BLACKWINTER.ATTRIBUTES.STAMINA"}}</label>
+      <div class="resource-fields">
+        <input name="system.stamina.value" type="number" value="{{system.stamina.value}}" />
+        <span>/</span>
+        <input name="system.stamina.max" type="number" value="{{system.stamina.max}}" />
+      </div>
+    </div>
+    <div class="resource defense">
+      <label>{{localize "BLACKWINTER.ATTRIBUTES.DEFENSE"}}</label>
+      <input name="system.defense" type="number" value="{{system.defense}}" />
+    </div>
+  </section>
+  <section class="attributes">
+    <h2>{{localize "BLACKWINTER.ATTRIBUTES.TITLE"}}</h2>
+    <div class="attribute-grid">
+      {{#each system.attributes as |value key|}}
+        <button type="button" class="attribute rollable" data-formula="1d20 + {{value}}" data-label="{{key}}">
+          <span>{{localize (concat "BLACKWINTER.ATTRIBUTES." (uppercase key))}}</span>
+          <strong>{{value}}</strong>
+        </button>
+      {{/each}}
+    </div>
+  </section>
+</form>
